@@ -1,14 +1,21 @@
 <template>
   <div id="app">
-    <router-link to="/hello">ハロー</router-link>
+    <CenterLine></CenterLine>
+    <!-- <Hello></Hello> -->
+    <!-- <router-link to="/hello">ハロー</router-link>
     <router-link to="/world">ワールド</router-link>
-    <router-view/>
+    <router-view/> -->
   </div>
 </template>
 
 <script>
+import Hello from '@/components/Hello.vue'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    CenterLine,
+  }
 }
 </script>
 
