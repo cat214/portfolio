@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <LeftBackgorund></LeftBackgorund>
     <CenterLine></CenterLine>
-    <!-- <Hello></Hello> -->
+    <RightBackgorund></RightBackgorund>
     <!-- <router-link to="/hello">ハロー</router-link>
     <router-link to="/world">ワールド</router-link>
     <router-view/> -->
@@ -9,11 +10,20 @@
 </template>
 
 <script>
-import Hello from '@/components/Hello.vue'
+import 'normalize.css'
+
+import LeftBackgorund from '@/components/LeftBackground.vue'
+import RightBackgorund from '@/components/RightBackground.vue'
+import CenterLine from '@/components/CenterLine.vue'
 
 export default {
   name: 'App',
+  data: {
+
+  },
   components: {
+    LeftBackgorund,
+    RightBackgorund,
     CenterLine,
   }
 }
@@ -26,6 +36,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  display: flex;
 }
 </style>
