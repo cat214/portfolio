@@ -9,10 +9,15 @@ import gsap from 'gsap'
 
 export default {
     mounted() {
-        gsap.to('.center-line', {
+        var tl = gsap.timeline();
+        tl.to('.center-line', {
             duration: 2,
             height: "100%",
             delay: 0.1,
+        })
+        tl.to('.center-line', {
+            duration: 1,
+            opacity: 0,
         })
     }
 }
@@ -21,11 +26,12 @@ export default {
 
 <style>
 .center-line {
-    background-color: black;
-    width: 2px;
+    background-color: #323232;
+    width: 1px;
     height: 0px;
     position: absolute;
     right: 50%;
     top: 0;
+    z-index: 100;
 }
 </style>
