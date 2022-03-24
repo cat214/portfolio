@@ -1,8 +1,8 @@
 <template>
     <div id="nav-menu">
         <div class="nav-cover">
-            <router-link to="/about">About me</router-link>
-            <router-link to="/works">Works</router-link>
+            <router-link class="about-link" to="/about">About me</router-link>
+            <router-link class="works-link" to="/works">Works</router-link>
         </div>
     </div>
 </template>
@@ -12,11 +12,18 @@ import gsap from 'gsap'
 
 export default {
     mounted() {
-        // gsap.to('.right-bg-cover', {
-        //     duration: 1.9,
-        //     x: 1000,
-        //     delay: 2.1,
-        // })
+        gsap.from('.about-link', {
+            duration: 2,
+            delay: 4.1,
+            y: 0.5,
+            opacity: 0,
+        })
+        gsap.from('.works-link', {
+            duration: 2,
+            delay: 4.2,
+            y: 0.5,
+            opacity: 0,
+        })
     }
 }
 </script>

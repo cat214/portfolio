@@ -2,14 +2,15 @@
   <div id="app">
     <LeftBackgorund></LeftBackgorund>
     <CenterLine></CenterLine>
-    <RightBackgorund>
-    </RightBackgorund>
+    <RightBackgorund></RightBackgorund>
     <NavMenu></NavMenu>
-    <router-view></router-view>
+    <router-view id="router-view"></router-view>
   </div>
 </template>
 
 <script>
+import gsap from 'gsap'
+
 import 'normalize.css'
 
 import LeftBackgorund from '@/components/LeftBackground.vue'
@@ -27,6 +28,14 @@ export default {
     RightBackgorund,
     CenterLine,
     NavMenu,
+  },
+
+  mounted() {
+    gsap.from('#router-view', {
+        duration: 2,
+        delay: 4.1,
+        opacity: 0,
+    })
   }
 }
 </script>
@@ -39,5 +48,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   display: flex;
+}
+
+#router-view  {
+  width: 50%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 20;
 }
 </style>
