@@ -2,10 +2,10 @@
   <div id="app">
     <LeftBackgorund></LeftBackgorund>
     <CenterLine></CenterLine>
-    <RightBackgorund></RightBackgorund>
-    <!-- <router-link to="/hello">ハロー</router-link>
-    <router-link to="/world">ワールド</router-link>
-    <router-view/> -->
+    <RightBackgorund>
+    </RightBackgorund>
+    <NavMenu></NavMenu>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,6 +15,7 @@ import 'normalize.css'
 import LeftBackgorund from '@/components/LeftBackground.vue'
 import RightBackgorund from '@/components/RightBackground.vue'
 import CenterLine from '@/components/CenterLine.vue'
+import NavMenu from '@/components/NavMenu.vue'
 
 export default {
   name: 'App',
@@ -25,6 +26,7 @@ export default {
     LeftBackgorund,
     RightBackgorund,
     CenterLine,
+    NavMenu,
   }
 }
 </script>

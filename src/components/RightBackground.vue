@@ -11,8 +11,8 @@ import gsap from 'gsap'
 export default {
     mounted() {
         gsap.to('.right-bg-cover', {
-            duration: 1.9,
-            x: 1000,
+            duration: 2 ,
+            x: 1200,
             delay: 2.1,
         })
     }
@@ -41,7 +41,7 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 5;
     overflow: hidden;
 }
 </style>

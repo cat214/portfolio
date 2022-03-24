@@ -11,8 +11,8 @@ import gsap from 'gsap'
 export default {
     mounted() {
         gsap.to('.left-bg-cover', {
-            duration: 1.9,
-            width: 0,
+            duration: 2,
+            x: -1200,
             delay: 2.1,
         })
     }
