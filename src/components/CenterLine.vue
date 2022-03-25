@@ -21,12 +21,11 @@ export default {
         })
     }
 }
-
 </script>
 
 <style>
 .center-line {
-    background-color: #323232;
+    background-color: #2e3238;
     width: 1px;
     height: 0px;
     position: absolute;
