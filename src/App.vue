@@ -4,7 +4,9 @@
     <CenterLine></CenterLine>
     <RightBackgorund></RightBackgorund>
     <NavMenu></NavMenu>
-    <router-view id="router-view"></router-view>
+    <transition name="fade">
+      <router-view id="router-view"></router-view>
+    </transition>
   </div>
 </template>
 
@@ -57,5 +59,21 @@ export default {
   top: 0;
   right: 0;
   z-index: 20;
+}
+
+.fade-enter-active {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.fade-enter-to {
+  opacity: 1;
+}
+
+.fade-leave-active {
+  transition: opacity 0.5s;
+  opacity: 0;
+}
+.fade-leave-to {
+  opacity: 0;
 }
 </style>
