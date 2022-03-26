@@ -25,7 +25,7 @@ export default {
 
 <style>
 .center-line {
-    background-color: #2e3238;
+    background-color: #efecde;
     width: 1px;
     height: 0px;
     position: absolute;

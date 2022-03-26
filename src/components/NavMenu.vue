@@ -47,7 +47,6 @@ export default {
 
     methods: {
         mouseOverAction(flag){
-             console.log(this.$route.path);
             if(flag == 'about') {
                 this.aboutHoverFlag = true
             }else if(flag == 'works') {

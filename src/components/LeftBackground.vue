@@ -28,7 +28,7 @@ export default {
 .left-bg-cover {
     width: 100%;
     height: 100vh;
-    background-color: white;
+    background-color: #1e1e1e;
     position: absolute;
     top: 0;
     left: 0;

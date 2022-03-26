@@ -1,9 +1,9 @@
 <template>
   <div id="app">
     <LeftBackgorund></LeftBackgorund>
+    <NavMenu></NavMenu>
     <CenterLine></CenterLine>
     <RightBackgorund></RightBackgorund>
-    <NavMenu></NavMenu>
     <transition name="fade">
       <router-view id="router-view"></router-view>
     </transition>
@@ -48,8 +48,9 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   display: flex;
+  height: 100vh;
+  width: 100%;
 }
 
 #router-view  {
@@ -59,6 +60,7 @@ export default {
   top: 0;
   right: 0;
   z-index: 20;
+  overflow: scroll;
 }
 
 .fade-enter-active {
