@@ -49,8 +49,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   display: flex;
+  color: #efecde;
   height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 
 #router-view  {
